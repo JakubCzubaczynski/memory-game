@@ -1,0 +1,160 @@
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* Internet Explorer */
+@-ms-keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes score {
+	0% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+
+	50% {
+		transform: scale(2.0);
+		-webkit-transform: scale(2.0);
+	}
+
+	100% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+
+body {
+	background-color: #cad6ff
+}
+
+.hide {
+	display: none;
+}
+
+.height-100 {
+	height: 100vh;
+}
+
+.myButton {
+	min-width: 200px;
+	box-shadow: 0px 10px 14px -7px #2422b5;
+	background-color: #b6c1f6;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 13px 32px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #3d768a;
+}
+
+.myButton:hover {
+	background-color: #87acf1;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.face-down {
+	background-color: white !important;
+}
+
+.start-menu {
+	color: #4a4a55;
+}
+
+.board {
+	margin-top: 100px;
+}
+
+.back {
+	display: flex;
+	align-items: center;
+	background-color: rgb(54, 54, 54);
+	color: rgb(238, 238, 238);
+}
+
+.back p {
+	font-weight: 200;
+	margin: 0;
+}
+
+.back:hover {
+	background-color: rgb(236, 236, 236);
+	color: rgb(48, 48, 48);
+}
+
+.score-wraper {
+	padding: 0;
+	margin: 0;
+	font-weight: 900;
+	font-size: 4rem;
+
+
+
+}
+
+.score {
+	border-radius: 50%;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: rgb(76 96 150);
+	color: #ffff;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-animation: appear 2s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: appear 2s;
+	/* Firefox < 16 */
+	-ms-animation: appear 2s;
+	/* Internet Explorer */
+	-o-animation: appear 2s;
+	/* Opera < 12.1 */
+	animation: appear 2s;
+}
+
+.animate {
+	animation: score 0.5s;
+}
