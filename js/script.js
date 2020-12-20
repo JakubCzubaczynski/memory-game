@@ -135,7 +135,7 @@ $(document).ready(function () {
     $('.win-alert').html('');
     $('.score-wraper').html(score);
 
-    const randomizedContent = shakeTheArray(cards);
+    
     //Creating and randomizing deck
     createDeck(size, cards);
     const randomizedContent = shakeTheArray(cards);
@@ -168,11 +168,11 @@ $(document).ready(function () {
 
           firstTry = secondTry = '';
           $(`[data-key="${dataArray[0]}"]`).delay(700).queue(function (next) {
-            $(this).attr('style', 'display: none !important');
+            $(this).attr('style', '	visibility: hidden; !important');
             next();
           })
           $(`[data-key="${dataArray[1]}"]`).delay(700).queue(function (next) {
-            $(this).attr('style', 'display: none !important');
+            $(this).attr('style', '	visibility: hidden; !important');
             next();
           })
 
