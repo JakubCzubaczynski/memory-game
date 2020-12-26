@@ -36,14 +36,11 @@ $(document).ready(function () {
 
   $('.score').hide();
 
-
-  let count = score = size = 0;
+let count = score = size = 0;
   let firstTry, secondTry;
   let dataArray = [];
 
-
-
-  $('#easy').click(function () {
+$('#easy').click(function () {
     $('.start-menu').hide().delay(1000);
 
     setTimeout(function () {
